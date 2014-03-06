@@ -49,5 +49,5 @@ insta_content = '\n'.join(insta_divs)
 
 with open('blogindextemplate.html', 'r') as fin:
     template = fin.read()
-    with open('/home/fran/francisbullinfoblog/index.html', 'w') as fout:
+    with open('/home/fran/francisbullinfo/index.html', 'w') as fout:
         fout.write((template % {'tweeter': content, 'insta': insta_content}).encode('utf-8'))
