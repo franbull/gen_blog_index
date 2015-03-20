@@ -5,16 +5,27 @@ title: Francis Bull
 
 <div id="home">
   <div class="posts">
-  <div id="profile_img"><img src="/assets/franbull_profile.jpg"></img></div>
+  <div id="profile_img"><img src="/assets/franbull_profile.png"></img></div>
   <div id="intro_blurb"><p>Hello! I am a software developer from lovely Southern Oregon</p></div>
   <div style="clear:both;"></div>
+
   <div>
     <h1>Links</h1>
     <div>
-        <a href="www.roguehacklab.com">Check out the Rogue Hack Lab</a><br/>
-        <a href="http://www.artandlogic.com/blog/author/fran112358/">I write blog posts for my employer's blog</a><br/>
+        <a href="http://www.artandlogic.com/blog/author/fran112358/">I wrote blog posts for my old employer's blog</a><br/>
         <a href="http://www.byrandom.com">A site that offers you random things to buy from amazon.com</a><br/>
         <a href="http://www.abullcreative.com">My wife is a graphic designer</a><br/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="tweets_div" class="col-md-6">
+      <h1>Tweeters</h1>
+      %(tweeter)s
+    </div>
+    <div id="insta_div" class="col-md-6">
+      <h1>Instilgram</h1>
+      %(insta)s
     </div>
   </div>
 
@@ -30,16 +41,6 @@ title: Francis Bull
     {%% endfor %%}
   </div>
 
-  <div class="row">
-    <div id="tweets_div" class="col-md-6">
-      <h1>Tweeters</h1>
-      %(tweeter)s
-    </div>
-    <div id="insta_div" class="col-md-6">
-      <h1>Instilgram</h1>
-      %(insta)s
-    </div>
-  </div>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
